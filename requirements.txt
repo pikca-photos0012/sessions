@@ -1,3 +1,5 @@
+sentence-transformers
+faiss-cpu
 google
 streamlit
 Pillow
@@ -6,3 +8,6 @@ numpy
 joblib
 flask
 scikit-learn
+
+PyPDF2
+google-adk
