@@ -8,6 +8,9 @@ numpy
 joblib
 flask
 scikit-learn
-
+qdrant-client
 PyPDF2
 google-adk
+
+# For email sending functionality
+python-dotenv
