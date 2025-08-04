@@ -15,3 +15,4 @@ crewai
 # For email sending functionality
 python-dotenv
 langgraph
+langchain_openai
