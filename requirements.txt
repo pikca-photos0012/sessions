@@ -11,6 +11,7 @@ scikit-learn
 qdrant-client
 PyPDF2
 google-adk
-
+crewai
 # For email sending functionality
 python-dotenv
+langgraph

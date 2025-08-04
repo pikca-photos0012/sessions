@@ -5,14 +5,21 @@ from google.adk.agents import LlmAgent
 from google.adk.tools import FunctionTool
 from qdrant_client import QdrantClient
 from qdrant_client.models import Filter
+import os
+from dotenv import load_dotenv
+
+
+# Load environment variables
+load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 
 # Initialize embedding model
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
 
+
 # Initialize Qdrant client
 qdrant_client = QdrantClient(
-    url="https://3bc81ea2-1ee1-4669-892e-a9907c817399.us-west-2-0.aws.cloud.qdrant.io",
-    api_key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.Tj2zIxV7zYWJBXcg0ZeUpqNSyfPBbqmrkYfDyydw6go",
+    url=os.getenv("QDRANT_URL"),
+    api_key=os.getenv("QDRANT_API_KEY"),
 )
 
 collection_name = "insurance_data"
