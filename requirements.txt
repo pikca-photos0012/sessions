@@ -16,3 +16,5 @@ crewai
 python-dotenv
 langgraph
 langchain_openai
+fastapi
+uvicorn
